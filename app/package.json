@@ -1,0 +1,13 @@
+{
+  "name": "angular-electron",
+  "description": "Angular Electron sample",
+  "author": {
+    "name": "Oleh Voitenko",
+    "email": "voytenko.ov@gmail.com"
+  },
+  "version": "0.0.0",
+  "main": "main.js",
+  "private": true,
+  "dependencies": {
+  }
+}

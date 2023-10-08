@@ -1,0 +1,23 @@
+<mat-card class="card">
+  <mat-card-content>
+      <mat-form-field class="half-width">
+        <mat-label>{{savedText ? savedText : 'Input your text'}}</mat-label>
+        <input matInput [(ngModel)]="inputText" [formControl]="inputFormControl" pattern="[ a-zA-Z]*">
+        <mat-error *ngIf="inputFormControl.hasError('pattern') && !inputFormControl.hasError('required')">
+          Only alphabetic characters are allowed
+        </mat-error>
+        <mat-error *ngIf="inputFormControl.hasError('required')">
+          Only alphabetic characters are allowed
+        </mat-error>
+      </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="saveText()">Save</button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="card-text text-white {{displayed ? 'displayed' : ''}}">
+  <mat-card-content>
+    <h2 >Saved text: </h2>
+    {{savedText}}
+  </mat-card-content>
+</mat-card>

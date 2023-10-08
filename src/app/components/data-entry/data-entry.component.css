@@ -1,0 +1,31 @@
+
+.half-width {
+  width: 100%;
+}
+
+.card {
+  top: 100px;
+  background: none;
+  border: none;
+  width: 40rem;
+  --mdc-elevated-card-container-elevation: 0
+}
+
+.text-white {
+  color: white;
+}
+
+.card-text {
+  top: 300px;
+  display: none;
+  background: none;
+  border: 1px solid purple;
+  width: 40rem;
+  --mdc-elevated-card-container-elevation: 0;
+}
+
+.displayed {
+  display: block;
+}
+
+
